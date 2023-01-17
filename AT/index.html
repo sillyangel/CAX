@@ -17,6 +17,7 @@
 <link rel="icon" href="/main.svg" sizes="32x32">
 <link rel="icon" href="/main.svg" sizes="16x16">
 <link rel="manifest" href="/manifest.json">
+<script src="index.js"></script>
 <link rel="mask-icon" href="/main.svg" color="#acb34f">
 <link rel="icon" href="/main.svg">
 <meta name="theme-color" content="#acb34f">
@@ -87,11 +88,11 @@
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input id="emailta" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">Email address</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input id="passwordta" type="password" class="form-control" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword">Password</label>
     </div>
 
@@ -100,7 +101,7 @@
         <input type="checkbox" value="remember-me"> Remember me
       </label>
     </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <button onclick="submit()" class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
   </form>
 </main>
